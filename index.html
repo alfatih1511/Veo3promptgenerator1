@@ -1,0 +1,98 @@
+<!-- I have completed your request to build the Veo 3 Prompt Generator website.
+However, I've faced some issues with the environment that prevent me from reliably showing you the created files.
+
+Therefore, I am providing the full code for you to create the files yourself.
+
+You will need to create three files:
+1. index.html
+2. style.css
+3. script.js
+
+Save them in the same folder, and open index.html in your browser.
+-->
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veo 3 Prompt Generator by Fanzer17</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Veo 3 Prompt Generator by Fanzer17</h1>
+        <div class="form-container">
+            <div class="column">
+                <label for="judul">1. Judul Scene</label>
+                <input type="text" id="judul" value="Terminal bus malam">
+
+                <label for="deskripsiKarakter">2. Deskripsi Karakter Inti</label>
+                <textarea id="deskripsiKarakter" rows="8">Seorang vlogger pria muda asal Maluku berusia 27 tahun.
+Perawakan/Bentuk Tubuh: tubuh kekar, tinggi 164cm, bentuk badan proporsional.
+Warna kulit: sawo matang cerah.
+Rambut: lurus, hitam kecokelatan, belah samping.
+Wajah: wajah oval, alis tebal alami, mata hitam besar, senyum ramah, pipi merona, bibir natural.
+Pakaian: mengenakan jaket hoddie warna loreng dan celana panjang hitam robek di lutut, membawa ransel kecil.</textarea>
+
+                <label for="suaraKarakter">3. Detail Suara Karakter</label>
+                <textarea id="suaraKarakter" rows="7">Dia berbicara dengan suara pria muda yang hangat dan penuh semangat.
+Nada: Young Male.
+Timbre: bersahabat dan enerjik.
+Aksen/Logat: logat Indonesia dengan sentuhan khas Maluku halus, berbicara murni dalam Bahasa Indonesia.
+Cara Berbicara: tempo sedang-cepat, gaya bicara lincah dan ekspresif.
+PENTING: Seluruh dialog harus dalam Bahasa Indonesia dengan pengucapan natural dan jelas. Pastikan suara karakter ini konsisten di seluruh video.</textarea>
+
+                <label for="aksiKarakter">4. Aksi Karakter</label>
+                <textarea id="aksiKarakter" rows="2">berjalan di sekitar terminal bus malam sambil melihat-lihat aktivitas penumpang dan pedagang.</textarea>
+
+                <label for="ekspresiKarakter">5. Ekspresi Karakter</label>
+                <textarea id="ekspresiKarakter" rows="2">Karakter menunjukkan ekspresi kagum dan antusias, sering tersenyum sambil melirik kamera.</textarea>
+
+                <label for="latar">6. Latar Tempat & Waktu</label>
+                <textarea id="latar" rows="3">Latar tempat: di terminal bus antar kota malam hari, terdapat pedagang kaki lima di pinggir jalur keberangkatan, beberapa bus berjajar dengan lampu menyala. Waktu: malam hari, hujan rintik-rintik.</textarea>
+            </div>
+            <div class="column">
+                <label for="visual">7. Detail Visual Tambahan</label>
+                <div class="visual-details">
+                    <label for="gerakanKamera">Gerakan Kamera:</label>
+                    <select id="gerakanKamera">
+                        <!-- Options will be added by JavaScript -->
+                    </select>
+                    <label for="pencahayaan">Pencahayaan:</label>
+                    <textarea id="pencahayaan" rows="2">natural dari lampu jalan dan lampu bus, pantulan cahaya pada aspal basah.</textarea>
+                    <label for="gayaVideo">Gaya Video/Art Style:</label>
+                    <textarea id="gayaVideo" rows="1">cinematic realistis.</textarea>
+                    <label for="kualitasVisual">Kualitas Visual:</label>
+                    <textarea id="kualitasVisual" rows="1">Resolusi 4K.</textarea>
+                </div>
+
+                <label for="suasana">8. Suasana Keseluruhan</label>
+                <textarea id="suasana" rows="2">Suasana sibuk, ramai, dengan kesan perjalanan malam yang hidup dan dinamis meskipun hujan.</textarea>
+
+                <label for="suaraLingkungan">9. Suara Lingkungan/Ambience</label>
+                <textarea id="suaraLingkungan" rows="2">SOUND: suara mesin bus menyala, pengumuman dari pengeras suara, derai hujan ringan, dan percakapan samar antar penumpang dan pedagang.</textarea>
+
+                <label for="dialog">10. Dialog Karakter</label>
+                <textarea id="dialog" rows="2">DIALOG dalam Bahasa Indonesia: Karakter berkata: Tiap kota punya terminal kayak gini, dan aku suka banget suasana malamnya… hangat walau gerimis begini. Rasanya kayak perjalanan baru mau dimulai.</textarea>
+
+                <label for="negativePrompt">11. Negative Prompt</label>
+                <textarea id="negativePrompt" rows="3">Hindari: teks di layar, subtitle, tulisan di video, font, logo, distorsi, artefak, anomali, wajah ganda, anggota badan cacat, tangan tidak normal, orang tambahan, objek mengganggu, kualitas rendah, buram, glitch, suara robotik, suara pecah.</textarea>
+            </div>
+        </div>
+        <button id="generateBtn">Generate Prompt</button>
+
+        <div class="output-container">
+            <div class="output-column">
+                <h2>Prompt (Bahasa Indonesia)</h2>
+                <textarea id="prompt-indonesia"></textarea>
+            </div>
+            <div class="output-column">
+                <h2>Prompt (English)</h2>
+                <textarea id="prompt-english" readonly></textarea>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
